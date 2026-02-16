@@ -1,3 +1,9 @@
+export default function App() {
+  const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
+  console.log(apiKey);
+
+  const [searchTerm, setSearchTerm] = useState('');
+
 import React, { useState, useMemo, useEffect } from 'react';
 import { Search, Filter, CalendarDays, BarChart3, PieChart } from 'lucide-react';
 import { blocks } from './data';
